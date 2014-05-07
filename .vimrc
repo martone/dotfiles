@@ -11,6 +11,7 @@ colo evening
 :set wildmode=list:longest
 :set listchars=tab:>-,trail:- " show tabs and trailing spaces
 
+" keep selection when indenting
 vnoremap < <gv
 vnoremap > >gv
 
@@ -20,5 +21,6 @@ nmap <C-k> <ESC>:bp<RETURN>
 
 filetype plugin indent on
 
+" always show status line
 :set laststatus=2
 :set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
