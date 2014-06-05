@@ -19,6 +19,9 @@ vnoremap > >gv
 nmap <C-j> <ESC>:bn<RETURN>
 nmap <C-k> <ESC>:bp<RETURN>
 
+" map Explore to something sane
+nmap <C-e> <ESC>:Explore<RETURN>
+
 filetype plugin indent on
 
 " always show status line
