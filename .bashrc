@@ -24,3 +24,4 @@ function ta() {
 PS1="\n\e[37;44m[\t \h] \w\e[0m\n$ "
 
 export PATH=$PATH:~/bin
+export GREP_OPTIONS='--color=auto'
