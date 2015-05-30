@@ -1,5 +1,11 @@
 syntax on
-colo evening
+" https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
+" https://github.com/vim-scripts/Solarized
+set background=dark                                                                                                                                          
+let g:solarized_termtrans = 1                                                                                                                                
+colorscheme solarized 
 
 :set incsearch
 :set pastetoggle=<F9>
@@ -27,3 +33,6 @@ filetype plugin indent on
 " always show status line
 :set laststatus=2
 :set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+" list long files in file browser
+:let g:netrw_liststyle=3
